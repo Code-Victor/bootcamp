@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.card {
+  background: rgba(255, 0, 0, 0.307);
+  perspective: 1000px;
+  .card-inner {
+    transform-style: preserve-3d;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transition: transform ease-in-out 400ms;
+
+    .card-face {
+      position: absolute;
+      inset: 0;
+      border-radius: 16px;
+      background-color: grey;
+      /* transition: transform ease-in-out 400ms; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      backface-visibility: hidden;
+    }
+    .card-front {
+      background-color: green;
+    }
+    .card-back {
+      background-color: red;
+      transform: rotateY(180deg);
+    }
+  }
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}

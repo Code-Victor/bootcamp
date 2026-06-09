@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Flip Card</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-face card-front">I'm front</div>
+        <div class="card-face card-back">I'm the back</div>
+      </div>
+    </div>
+    <script>
+      const card = document.querySelector(".card");
+      if (card === null) {
+        throw Error("Element not found");
+      }
+      card.addEventListener("click", () => {
+        console.log("why did you click me?????");
+        card.classList.toggle("flipped")
+      });
+    </script>
+  </body>
+</html>

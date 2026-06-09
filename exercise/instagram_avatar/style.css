@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.avatar_container{
+    background: linear-gradient(to top right, #FFCA00,#D300C5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    border-radius: 9999px;
+
+    img{
+        border-radius: inherit;
+        box-shadow: 0 0 0 6px #fff;
+    }
+}
