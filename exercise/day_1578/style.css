@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,900&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Fonts */
+  --heading-font: "Merriweather", serif;
+  --body-font: Poppins, sans-serif;
+
+  /* Colors */
+  --off-white: #f7f7fa;
+  --primary: #60679f;
+  --off-primary: #e3e5f1;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--off-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--body-font);
+}
+.card {
+  width: 628px;
+  background: #fff;
+  box-shadow: 0px 34px 64px 0px #60679f33;
+  border-radius: 32px;
+  padding: 53px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  h1 {
+    font-family: var(--heading-font);
+  }
+  .card-pkg-detail {
+    display: flex;
+    border: 1px solid var(--off-primary);
+    background: var(--off-white);
+    padding: 25px;
+    border-radius: 16px;
+    justify-content: space-between;
+    .pkg-detail-item > * + * {
+      margin-top: 8px;
+    }
+    .pkg-detail-item-title {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      svg,
+      img {
+        width: 22px;
+        height: 22px;
+      }
+      h2 {
+        color: var(--primary);
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 14px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+      }
+    }
+  }
+  .card-tracking-details {
+    .track-item {
+      display: flex;
+      gap: 14px;
+      .track-indicator {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .dot {
+          width: 18px;
+          height: 18px;
+          border-radius: 9999px;
+          background: #fff;
+          border: 4px solid var(--primary);
+        }
+        .stick {
+          flex-grow: 1;
+          background-color: var(--primary);
+          width: 1px;
+        }
+      }
+      .track-item-detail {
+        & > * + * {
+          margin-top: 8px;
+        }
+        h3 {
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 16px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: #10153e;
+        }
+        p {
+          font-family: Poppins;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 12px;
+          line-height: 100%;
+          letter-spacing: 0%;
+          color: var(--primary);
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

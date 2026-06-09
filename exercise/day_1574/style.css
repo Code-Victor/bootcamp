@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:opsz,wght@18..144,900&family=Poppins:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --heading-font: "Merriweather", serif;
+  --body-font: Poppins, sans-serif;
+}
+body {
+  background-color: #f4f5fa;
+  min-height: 100vh;
+}
+.pricing {
+  padding: 82px 16px;
+  max-width: 1308px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+
+  .pricing-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+
+    h1 {
+      max-width: 579px;
+      font-family: var(--heading-font);
+    }
+    p {
+      max-width: 713px;
+      font-family: var(--body-font);
+      font-size: 18px;
+    }
+  }
+  .pricing-prices {
+    display: flex;
+    gap: 64px;
+    justify-content: center;
+    flex-wrap: wrap;
+    .price-card {
+      background: #fff;
+      border-radius: 14px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      font-family: var(--body-font);
+      flex-basis: 285px;
+      box-shadow: -24px -24px var(--color,blue);
+      
+      .price-info {
+        h2 {
+          font-weight: 600;
+          font-style: SemiBold;
+          font-size: 18px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+        p {
+          font-size: 14px;
+        }
+      }
+      .card-rate {
+        font-size: 14px;
+
+        & :nth-child(1) {
+          font-weight: 700;
+          font-style: Bold;
+          font-size: 24px;
+          line-height: 100%;
+          letter-spacing: 0%;
+        }
+      }
+      .price-card-cta {
+        align-self: flex-start;
+        font-family: var(--body-font);
+        padding: 16px 24px;
+        border-radius: 9999px;
+        background: #f4f5fa;
+        color: #171435;
+        font-weight: 500;
+        border: 1px solid #f0f0f6;
+        box-shadow: 0 4px #e7e7fb;
+        transition: transform 200ms ease-in-out;
+        &:active {
+          transform: scale(0.98);
+        }
+      }
+    }
+  }
+  .pricing-cta {
+    align-self: center;
+    font-family: var(--body-font);
+    padding: 16px 24px;
+    border-radius: 9999px;
+    border: none;
+    background: #171435;
+    color: #fff;
+    transition: transform 200ms ease-in-out;
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
