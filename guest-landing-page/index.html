@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css" />
+    <title>guest-landing-page</title>
+  </head>
+  <body class="font-body">
+    <!-- NavBar -->
+    <header class="bg-white h-28">
+      <nav
+        class="max-w-7xl w-full mx-auto h-full flex items-center justify-between"
+      >
+        <img class="h-11" src="./src/assets/urbannet.svg" />
+        <ul class="flex gap-5 text-lg">
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">About</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors"
+              >Browse Services</a
+            >
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">Blog</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-primary transition-colors">Trends</a>
+          </li>
+        </ul>
+        <div class="flex gap-4 items-center">
+          <a href="#" class="hover:text-primary transition-colors"
+            >Join as Service Provder</a
+          >
+          <button
+            class="border px-4 py-3 rounded-full transition-transform active:scale-95"
+          >
+            Sign up or login
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-green-200 h-[calc(100vh-7rem)] relative">
+      <video
+        class="inset-0 absolute w-full h-full object-cover"
+        src="https://mediabunny.dev/big-buck-bunny.mp4"
+        autoplay
+        muted
+      ></video>
+      <div class="absolute inset-0 w-full h-full bg-black/50">
+        <div class="max-w-7xl w-full mx-auto flex items-center h-full">
+          <div class="flex flex-col gap-4">
+            <h1
+              class="text-white font-heading text-[36px] md:text-[48px] lg:text-[74px] font-bold leading-[1.2]"
+            >
+              Real Services,<br />
+              Real People, Real Easy
+            </h1>
+            <p class="text-white text-[28px] max-w-[740px]">
+              Connecting people to the services they need, when they need them.
+            </p>
+            <form class="bg-white rounded-[20px] flex py-3 px-6">
+              <input
+                class="grow h-18 text-xl"
+                type="text"
+                placeholder="Search by role, service or keywords"
+              />
+              <button
+                class="bg-primary size-18 rounded-3xl flex items-center justify-center transition active:scale-95"
+              >
+                <svg
+                  class="size-[38px]"
+                  width="39"
+                  height="39"
+                  viewBox="0 0 39 39"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.2347 34.4889C9.27612 34.4889 1.98242 27.1952 1.98242 18.2366C1.98242 9.27807 9.27612 1.98438 18.2347 1.98438C27.1932 1.98438 34.4869 9.27807 34.4869 18.2366C34.4869 27.1952 27.1932 34.4889 18.2347 34.4889ZM18.2347 4.36275C10.5763 4.36275 4.3608 10.5941 4.3608 18.2366C4.3608 25.8792 10.5763 32.1105 18.2347 32.1105C25.8931 32.1105 32.1085 25.8792 32.1085 18.2366C32.1085 10.5941 25.8931 4.36275 18.2347 4.36275Z"
+                    fill="white"
+                  />
+                  <path
+                    d="M34.8833 36.069C34.582 36.069 34.2807 35.958 34.0429 35.7202L30.8717 32.549C30.4119 32.0892 30.4119 31.3281 30.8717 30.8683C31.3315 30.4085 32.0926 30.4085 32.5524 30.8683L35.7236 34.0395C36.1834 34.4993 36.1834 35.2604 35.7236 35.7202C35.4858 35.958 35.1845 36.069 34.8833 36.069Z"
+                    fill="white"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Join Urban -->
+    <section class="max-w-7xl z-10 w-full mx-auto relative flex items-center gap-6 py-[45px] px-[90px] justify-center rounded-4xl overflow-hidden mt-[95px] -mb-[80px]">
+      <img class="absolute -z-1 object-cover w-full h-full inset-0" src="./src/assets/africantextiles.png" />
+      <h2 class="font-heading font-bold leading-[1.2] text-[70px] text-white">
+        Join The Urban Network now!
+      </h2>
+      <button
+        class="bg-primary size-22 rounded-full flex items-center justify-center group"
+      >
+        <svg
+          class="group-hover:-rotate-30 transition"
+          width="48"
+          height="49"
+          viewBox="0 0 48 49"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M23.0068 32.5829C22.7769 32.4502 22.601 32.2238 22.5353 31.9184C22.4083 31.3279 22.779 30.6859 23.3539 30.5006L34.3361 26.9614L31.91 15.681C31.783 15.0905 32.1537 14.4484 32.7285 14.2632C33.3034 14.0779 33.8843 14.4133 34.0113 15.0038L36.6695 27.3634C36.7965 27.9539 36.4258 28.5959 35.8509 28.7812L23.8181 32.659C23.5207 32.7548 23.2367 32.7157 23.0068 32.5829Z"
+            fill="white"
+          />
+          <path
+            d="M34.8341 28.578L14.4675 16.8193C13.9714 16.5329 13.8225 15.8406 14.1391 15.2922C14.4557 14.7438 15.1297 14.5266 15.6259 14.8131L35.9924 26.5717C36.4886 26.8582 36.6375 27.5505 36.3209 28.0989C36.0043 28.6472 35.3303 28.8645 34.8341 28.578Z"
+            fill="white"
+          />
+        </svg>
+      </button>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-[#1D0D02]">
+      <div class="max-w-7xl w-full mx-auto pt-28 pb-8">
+        <div class="grid gap-y-5 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          <div class="">
+            <h2 class="uppercase text-[#65605D] mb-7">FOR CUSTOMERS</h2>
+            <ul class="flex flex-col gap-3 text-lg text-white">
+              <li><a href="#">How The Urbannet Works </a></li>
+              <li><a href="#">Service Catalog </a></li>
+              <li><a href="#">Trust & Safety</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="uppercase text-[#65605D] mb-7">FOR CUSTOMERS</h2>
+            <ul class="flex flex-col gap-3 text-lg text-white">
+              <li><a href="#">How The Urbannet Works </a></li>
+              <li><a href="#">Service Catalog </a></li>
+              <li><a href="#">Trust & Safety</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="uppercase text-[#65605D] mb-7">FOR CUSTOMERS</h2>
+            <ul class="flex flex-col gap-3 text-lg text-white">
+              <li><a href="#">How The Urbannet Works </a></li>
+              <li><a href="#">Service Catalog </a></li>
+              <li><a href="#">Trust & Safety</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="uppercase text-[#65605D] mb-7">FOR CUSTOMERS</h2>
+            <ul class="flex flex-col gap-3 text-lg text-white">
+              <li><a href="#">How The Urbannet Works </a></li>
+              <li><a href="#">Service Catalog </a></li>
+              <li><a href="#">Trust & Safety</a></li>
+            </ul>
+          </div>
+        </div>
+        <button
+          class="bg-primary size-22 rounded-full flex items-center justify-center mt-16 group"
+        >
+          <svg
+            class="group-hover:-rotate-30 transition"
+            width="48"
+            height="49"
+            viewBox="0 0 48 49"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M23.0068 32.5829C22.7769 32.4502 22.601 32.2238 22.5353 31.9184C22.4083 31.3279 22.779 30.6859 23.3539 30.5006L34.3361 26.9614L31.91 15.681C31.783 15.0905 32.1537 14.4484 32.7285 14.2632C33.3034 14.0779 33.8843 14.4133 34.0113 15.0038L36.6695 27.3634C36.7965 27.9539 36.4258 28.5959 35.8509 28.7812L23.8181 32.659C23.5207 32.7548 23.2367 32.7157 23.0068 32.5829Z"
+              fill="white"
+            />
+            <path
+              d="M34.8341 28.578L14.4675 16.8193C13.9714 16.5329 13.8225 15.8406 14.1391 15.2922C14.4557 14.7438 15.1297 14.5266 15.6259 14.8131L35.9924 26.5717C36.4886 26.8582 36.6375 27.5505 36.3209 28.0989C36.0043 28.6472 35.3303 28.8645 34.8341 28.578Z"
+              fill="white"
+            />
+          </svg>
+        </button>
+        <div class="flex gap-3 items-center mt-16 [&>svg]:size-6">
+          <span class="text-[#A0A0A0]">Follow us</span>
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_7003_10821)">
+              <path
+                d="M14.8859 25.7793V14.021H18.8311L19.423 9.43722H14.8859V6.51116C14.8859 5.18446 15.2528 4.28034 17.1574 4.28034L19.5827 4.27934V0.179462C19.1633 0.124959 17.7236 0 16.0479 0C12.5489 0 10.1534 2.13577 10.1534 6.05718V9.43722H6.19629V14.021H10.1534V25.7793H14.8859Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_7003_10821">
+                <rect width="25.7793" height="25.7793" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_7003_10825)">
+              <path
+                d="M19.333 0H6.44335C2.89902 0 -0.00146484 2.89922 -0.00146484 6.44481V19.3344C-0.00146484 22.8788 2.89902 25.7793 6.44335 25.7793H19.333C22.8773 25.7793 25.7778 22.8788 25.7778 19.3344V6.44481C25.7778 2.89922 22.8773 0 19.333 0ZM12.8882 18.2601C9.9216 18.2601 7.51738 15.8549 7.51738 12.8896C7.51738 9.92306 9.9216 7.51885 12.8882 7.51885C15.8534 7.51885 18.2589 9.92306 18.2589 12.8896C18.2589 15.8549 15.8534 18.2601 12.8882 18.2601ZM19.8701 7.51885C18.9795 7.51885 18.2589 6.79733 18.2589 5.90764C18.2589 5.01795 18.9795 4.29644 19.8701 4.29644C20.7608 4.29644 21.4814 5.01795 21.4814 5.90764C21.4814 6.79733 20.7608 7.51885 19.8701 7.51885Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_7003_10825">
+                <rect width="25.7793" height="25.7793" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            width="25"
+            height="25"
+            viewBox="0 0 25 25"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_7003_10835)">
+              <path
+                d="M23.6537 0C22.757 1.05021 21.8588 2.10043 20.9591 3.15064C18.8844 5.56511 16.8085 7.97857 14.7316 10.391C14.7157 10.4095 14.7028 10.4296 14.6745 10.4683L24.4422 24.6839C24.3564 24.6929 24.3002 24.7045 24.2418 24.7045C21.9747 24.7045 19.7072 24.7058 17.4395 24.7084C17.294 24.7084 17.2112 24.6616 17.1289 24.5415C15.0264 21.4741 12.9206 18.4086 10.8113 15.3452C10.7662 15.28 10.7177 15.2165 10.6551 15.1307C10.2986 15.543 9.95325 15.9407 9.60919 16.3405C7.27795 19.053 4.94729 21.7666 2.6172 24.4814C2.47219 24.6504 2.32718 24.7165 2.10539 24.7105C1.51378 24.6946 0.920893 24.7054 0.268799 24.7054L9.707 13.7352C9.09352 12.842 8.48518 11.9565 7.87642 11.071C5.38817 7.45017 2.89991 3.82905 0.411659 0.20764C0.37092 0.140472 0.333829 0.071158 0.300545 0L7.48902 0C7.51005 0.0338917 7.52935 0.0690705 7.55209 0.101675C9.57072 3.03953 11.5894 5.97696 13.608 8.91395C13.6389 8.95685 13.674 8.99975 13.7217 9.06025C13.8075 8.965 13.8808 8.88349 13.9525 8.80027C16.2371 6.14556 18.521 3.49042 20.8042 0.834852C21.038 0.563289 21.2568 0.27714 21.4824 0H23.6537ZM21.5039 23.1665C21.461 23.0918 21.446 23.0631 21.428 23.0378C16.472 15.9463 11.5138 8.85689 6.55335 1.76966C6.51446 1.72405 6.46666 1.68686 6.41288 1.66037C6.3591 1.63389 6.30048 1.61867 6.24061 1.61565C5.30022 1.60364 4.3594 1.60836 3.41858 1.60964C3.35852 1.60964 3.29889 1.61951 3.20794 1.62809C3.27787 1.73277 3.32849 1.81256 3.38255 1.88979L9.19605 10.2057C12.1705 14.4589 15.143 18.713 18.1134 22.9679C18.219 23.1193 18.3279 23.1708 18.5056 23.1691C19.4138 23.1601 20.3224 23.1652 21.231 23.1652L21.5039 23.1665Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_7003_10835">
+                <rect width="24.7109" height="24.7109" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg
+            width="26"
+            height="26"
+            viewBox="0 0 26 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g clip-path="url(#clip0_7003_10831)">
+              <path
+                d="M22.2639 0H3.51535C2.58302 0 1.68888 0.370366 1.02962 1.02962C0.370366 1.68888 0 2.58302 0 3.51535L0 22.2639C0 23.1962 0.370366 24.0904 1.02962 24.7496C1.68888 25.4089 2.58302 25.7793 3.51535 25.7793H22.2639C23.1962 25.7793 24.0904 25.4089 24.7496 24.7496C25.4089 24.0904 25.7793 23.1962 25.7793 22.2639V3.51535C25.7793 2.58302 25.4089 1.68888 24.7496 1.02962C24.0904 0.370366 23.1962 0 22.2639 0ZM8.78838 20.4008C8.78858 20.4723 8.77466 20.5431 8.74744 20.6092C8.72022 20.6753 8.68022 20.7353 8.62974 20.786C8.57926 20.8366 8.51929 20.8767 8.45326 20.9041C8.38724 20.9315 8.31645 20.9456 8.24497 20.9456H5.92923C5.85762 20.9458 5.78668 20.9319 5.72048 20.9046C5.65429 20.8772 5.59414 20.8371 5.54351 20.7865C5.49287 20.7358 5.45275 20.6757 5.42543 20.6095C5.39812 20.5433 5.38416 20.4724 5.38435 20.4008V10.6925C5.38435 10.548 5.44176 10.4094 5.54394 10.3072C5.64613 10.2051 5.78472 10.1477 5.92923 10.1477H8.24497C8.38923 10.148 8.52744 10.2056 8.62931 10.3078C8.73118 10.4099 8.78838 10.5483 8.78838 10.6925V20.4008ZM7.08637 9.2278C6.65182 9.2278 6.22704 9.09894 5.86573 8.85752C5.50442 8.61611 5.22281 8.27297 5.05651 7.8715C4.89022 7.47003 4.84671 7.02827 4.93149 6.60207C5.01626 6.17588 5.22552 5.78439 5.53278 5.47713C5.84005 5.16986 6.23154 4.9606 6.65773 4.87583C7.08393 4.79105 7.52569 4.83456 7.92716 5.00085C8.32862 5.16715 8.67176 5.44875 8.91318 5.81007C9.1546 6.17138 9.28346 6.59616 9.28346 7.03071C9.28346 7.61341 9.05198 8.17225 8.63995 8.58429C8.22791 8.99632 7.66907 9.2278 7.08637 9.2278ZM20.8929 20.4388C20.8931 20.5047 20.8803 20.5699 20.8552 20.6308C20.8301 20.6916 20.7932 20.7469 20.7466 20.7935C20.7001 20.8401 20.6448 20.8769 20.5839 20.9021C20.523 20.9272 20.4578 20.94 20.392 20.9398H17.9019C17.8361 20.94 17.7709 20.9272 17.71 20.9021C17.6491 20.8769 17.5938 20.8401 17.5473 20.7935C17.5007 20.7469 17.4638 20.6916 17.4387 20.6308C17.4136 20.5699 17.4008 20.5047 17.401 20.4388V15.8909C17.401 15.2112 17.6002 12.9145 15.6243 12.9145C14.0936 12.9145 13.7816 14.4862 13.7201 15.1922V20.4447C13.7201 20.5763 13.6684 20.7026 13.576 20.7964C13.4836 20.8901 13.3581 20.9437 13.2265 20.9456H10.8214C10.7557 20.9456 10.6906 20.9327 10.63 20.9075C10.5693 20.8823 10.5141 20.8454 10.4677 20.7988C10.4213 20.7523 10.3846 20.6971 10.3596 20.6363C10.3345 20.5755 10.3218 20.5104 10.322 20.4447V10.6501C10.3218 10.5843 10.3345 10.5192 10.3596 10.4585C10.3846 10.3977 10.4213 10.3425 10.4677 10.2959C10.5141 10.2494 10.5693 10.2125 10.63 10.1873C10.6906 10.1621 10.7557 10.1491 10.8214 10.1491H13.2265C13.3594 10.1491 13.4868 10.2019 13.5807 10.2958C13.6747 10.3898 13.7275 10.5172 13.7275 10.6501V11.4967C14.2958 10.6427 15.138 9.98653 16.9352 9.98653C20.9164 9.98653 20.89 13.704 20.89 15.7459L20.8929 20.4388Z"
+                fill="white"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_7003_10831">
+                <rect width="25.7793" height="25.7793" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div
+          class="div border-t border-[#595959B2] mt-10 flex justify-between items-center py-6"
+        >
+          <span class="text-[#A0A0A0]">2026 TheUrbanNet LTD</span>
+
+          <ul class="flex gap-2 items-center text-white">
+            <li>HI</li>
+            <li>hello</li>
+            <li>dkdkd</li>
+            <li>dkdkd</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
