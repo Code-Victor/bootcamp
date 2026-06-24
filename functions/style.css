@@ -1,0 +1,16 @@
+:is(main, footer) :is(h1, p) {
+  color: green;
+}
+
+:is(ol, ul, menu) :is(ol, ul, menu) :is(ul, menu) {
+}
+
+/* footer :is(h1,p){
+    color: green;
+} */
+button.hi {
+    background-color: attr(data-color);
+    &::after{
+        content: attr(data-open)
+    }
+}
